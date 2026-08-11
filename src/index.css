@@ -276,3 +276,43 @@ body {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.22);
 }
+
+/* ── QO'SHILGAN YANGI USLUBLAR ── */
+
+/* Xatolik yozuvi */
+.error-text {
+  color: #f87171;
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 5px;
+  animation: fadeIn 0.3s ease;
+}
+
+.input-error {
+  border-color: #f87171 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Bajarilgan vazifa ustidan chizish */
+.item-title.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+/* Tahrirlash inputi */
+.edit-input {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.65);
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
